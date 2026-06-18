@@ -5,8 +5,8 @@ import { Section } from "@/components/Section";
 import { company, sourceContent } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Contact OBRI Electrical Services",
-  description: "Contact OBRI Electrical Services for emergency electrician call-outs, quotes and electrical services in London."
+  title: "Need an Electrician in London? Get a Fast Quote Today",
+  description: "Get a fast quote from OBRI Electrical Services for emergency call-outs, EICRs, rewires, consumer units and EV chargers in London."
 };
 
 export default function ContactPage() {
@@ -14,8 +14,9 @@ export default function ContactPage() {
     <main>
       <section className="bg-obri-navy px-4 py-16 text-white">
         <div className="mx-auto max-w-7xl">
-          <h1 className="font-display text-4xl font-black md:text-6xl">Contact OBRI Electrical Services</h1>
-          <p className="mt-5 max-w-3xl text-xl text-blue-100">{sourceContent.contact[0]}</p>
+          <h1 className="font-display text-4xl font-black md:text-6xl">Need an Electrician in London? Get a Fast Quote Today</h1>
+          <p className="mt-5 max-w-4xl text-xl font-bold text-blue-100">Emergency Call-Outs • EICRs • Rewires • Consumer Units • EV Chargers</p>
+          <p className="mt-5 max-w-3xl text-blue-100">{sourceContent.contact[0]}</p>
           <p className="mt-2 max-w-3xl text-blue-100">{sourceContent.contact[1]}</p>
           <p className="mt-5 max-w-3xl text-xl font-bold text-white">{company.address}</p>
           <p className="mt-2 text-2xl font-black">{company.phone}</p>

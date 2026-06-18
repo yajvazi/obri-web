@@ -49,9 +49,9 @@ export const sourceContent = {
   contact: [
     "We stay in constant communication with our customers until the job is done.",
     "If you have questions or special requests, just get in touch.",
-    "OBRIS Ltd WORKSTATION",
-    "Monday - Friday: 24/7",
-    "Saturday - Sunday: By Appointments"
+    "OBRI LTD",
+    "Monday - Friday: 24-Hour Emergency Service",
+    "Saturday - Sunday: By Appointment Only"
   ],
   qualifications: ["Proud Member", "in Partnership", "Public Liability Insurance"]
 };

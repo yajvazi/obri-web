@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { EmergencyQuoteCTA } from "@/components/EmergencyQuoteCTA";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
 import { JsonLd } from "@/components/JsonLd";
 import { faqSchema, localBusinessSchema } from "@/lib/seo";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={faqSchema()} />
         <Header />
         {children}
+        <EmergencyQuoteCTA />
         <Footer />
         <StickyMobileCTA />
       </body>
