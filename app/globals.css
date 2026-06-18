@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FAFAF8;
+  color: #111827;
+  --font-lato: Lato, Arial, sans-serif;
+  --font-comfortaa: Comfortaa, Arial, sans-serif;
+}
+
+::selection {
+  background: #0D9488;
+  color: white;
+}
