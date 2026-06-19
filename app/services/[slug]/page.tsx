@@ -14,6 +14,21 @@ function getService(slug: string) {
   return services.find(([itemSlug]) => itemSlug === slug);
 }
 
+const processCards = [
+  {
+    title: "Initial Safety Assessment",
+    text: "Our electricians carry out a detailed assessment to identify issues quickly and ensure the safest course of action."
+  },
+  {
+    title: "Clear Options and Pricing",
+    text: "We provide honest advice, practical solutions, and transparent quotations so you can make informed decisions."
+  },
+  {
+    title: "Neat, Compliant Workmanship",
+    text: "Every installation and repair is completed to the highest standards, fully compliant with current regulations and best practices."
+  }
+];
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getService(slug);
@@ -41,10 +56,10 @@ export default async function ServicePage({ params }: Props) {
       </section>
       <Section title={`Professional ${title.toLowerCase()}`} intro={`OBRI Electrical Services provides ${title.toLowerCase()} for residential, commercial and industrial customers across London.`}>
         <div className="grid gap-6 md:grid-cols-3">
-          {["Initial safety assessment", "Clear options and pricing", "Neat, compliant workmanship"].map((item) => (
-            <div key={item} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-xl font-black">{item}</h2>
-              <p className="mt-3 leading-7 text-slate-600">The team explains the scope, uses appropriate parts and stays with the job until the installation is safe and complete.</p>
+          {processCards.map((item) => (
+            <div key={item.title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-black">{item.title}</h2>
+              <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
             </div>
           ))}
         </div>
