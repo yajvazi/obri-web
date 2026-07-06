@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "OBRI Electrical Services",
     locale: "en_GB",
     type: "website",
-    images: ["/obri-services.png"]
+    images: ["/obri-logo.svg"]
   },
   icons: {
     icon: "/obri-logo.svg"

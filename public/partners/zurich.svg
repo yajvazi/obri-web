@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-labelledby="title">
+  <title id="title">Zurich Insurance</title>
+  <rect width="720" height="260" fill="#fff"/>
+  <circle cx="132" cy="130" r="74" fill="#0b62a8"/>
+  <path d="M88 89h91l-62 82h66v22H73l63-82H88V89Z" fill="#fff"/>
+  <text x="238" y="158" fill="#0b4f8a" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" letter-spacing="4">ZURICH</text>
+</svg>

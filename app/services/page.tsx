@@ -12,7 +12,6 @@ export default function ServicesPage() {
   return (
     <main>
       <Section title="Electrical Services London" intro="Professional electricians and installers for emergency repairs, upgrades, inspections, fit-outs and maintenance across London.">
-        <Image src="/obri-services.png" alt="OBRI Electrical Services branded service image" width={1280} height={870} className="mb-10 rounded-lg object-cover shadow-premium" />
         <ServicesGrid />
       </Section>
     </main>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CTAButtons } from "@/components/CTAButtons";
 import { ContactForm } from "@/components/ContactForm";
+import { PartnerLogos } from "@/components/PartnerLogos";
 import { ServicesGrid, TrustBadges } from "@/components/Cards";
 import { Section } from "@/components/Section";
 import { company, reviews, sourceContent } from "@/lib/data";
@@ -22,13 +23,13 @@ export default function HomePage() {
               <p className="mt-4 max-w-2xl leading-7 text-blue-100">{sourceContent.intro[2]}</p>
               <div className="mt-8"><CTAButtons /></div>
             </div>
-            <div className="overflow-hidden rounded-lg border border-white/15 bg-white shadow-premium">
-              <Image src="/obri-services.png" alt="OBRI Electrical Services branded storefront and service signage" width={1280} height={870} className="aspect-[4/3] object-cover" priority />
-              <div className="bg-obri-ink p-6">
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-red-200">Emergency response</p>
-                <p className="mt-3 text-4xl font-black">45-minute call-out</p>
-                <p className="mt-3 text-blue-100">24/7 service for urgent faults, unsafe electrics and loss of power.</p>
-                <a className="mt-6 block rounded bg-white px-5 py-4 text-center text-xl font-black text-obri-ink" href={`tel:${company.tel}`}>{company.phone}</a>
+            <div className="rounded-lg border border-white/15 bg-white/10 p-8 shadow-premium backdrop-blur">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-teal-200">Emergency response</p>
+              <p className="mt-3 font-display text-4xl font-black md:text-5xl">45-minute call-out</p>
+              <p className="mt-4 text-lg leading-7 text-blue-100">24/7 service for urgent faults, unsafe electrics and loss of power.</p>
+              <div className="mt-8 grid gap-3">
+                <a className="rounded bg-white px-5 py-4 text-center text-xl font-black text-obri-ink" href={`tel:${company.tel}`}>Call {company.phone}</a>
+                <a className="rounded border border-white/30 px-5 py-4 text-center font-bold text-white" href="/contact">Get a Free Quote</a>
               </div>
             </div>
           </div>
@@ -53,12 +54,8 @@ export default function HomePage() {
       </Section>
 
       <Section title="Qualifications & Certifications" intro="Electrical work is delivered with compliance, inspection and safety at the centre of the process.">
-        <div className="grid gap-5 md:grid-cols-4">
-          {sourceContent.qualifications.map((item) => (
-            <div key={item} className="rounded-lg border border-slate-200 bg-obri-mist p-6 font-bold">{item}</div>
-          ))}
-          <div className="rounded-lg border border-slate-200 bg-obri-mist p-6 font-bold">Residential, commercial and industrial electrical work</div>
-        </div>
+        <PartnerLogos />
+
       </Section>
 
       <Section dark title="Reviews & Testimonials" intro="At OBRI, our reputation is built on the trust and satisfaction of our clients. Every project is delivered with professionalism, attention to detail, and a commitment to exceeding expectations.">
