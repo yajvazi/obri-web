@@ -61,7 +61,7 @@ export default function HomePage() {
       <Section dark title="Reviews & Testimonials" intro="At OBRI, our reputation is built on the trust and satisfaction of our clients. Every project is delivered with professionalism, attention to detail, and a commitment to exceeding expectations.">
         <div className="grid gap-5 md:grid-cols-3">
           {reviews.map((review) => (
-            <article key={review.name} className="rounded-lg bg-white p-6 text-obri-ink">
+            <article key={review.text} className="rounded-lg bg-white p-6 text-obri-ink">
               <p className="text-obri-emergency">★★★★★</p>
               <p className="mt-4 leading-7">{review.text}</p>
               <p className="mt-4 font-black">{review.name}</p>
@@ -95,9 +95,9 @@ export default function HomePage() {
       </section>
 
       <Section title="Request a Quote" intro="Tell OBRI what you need and where the job is. The form is ready for a future email, Resend, Formspree or backend API connection.">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr]">
+        <div className="grid min-w-0 gap-8 lg:grid-cols-[1fr_0.8fr]">
           <ContactForm />
-          <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+          <div className="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white">
             <iframe title="Map to OBRIS LTD" className="h-full min-h-[420px] w-full" loading="lazy" src="https://www.google.com/maps?q=Tonbridge%20House%2C%20Tonbridge%20Street%2C%20London%20WC1H%209PA&output=embed" />
           </div>
         </div>

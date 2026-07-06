@@ -24,9 +24,9 @@ export default function ContactPage() {
         </div>
       </section>
       <Section title="Request a Quote" intro="Send your job details, service need and postcode. This form is prepared for email/API integration later.">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr]">
+        <div className="grid min-w-0 gap-8 lg:grid-cols-[1fr_0.8fr]">
           <ContactForm />
-          <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+          <div className="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
             <div className="p-6">
               <h2 className="text-2xl font-black">{sourceContent.contact[2]}</h2>
               <p className="mt-3 text-slate-700">{company.address}</p>
