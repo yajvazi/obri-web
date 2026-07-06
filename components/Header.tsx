@@ -16,9 +16,6 @@ const nav = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50">
-      <div className="border-b border-obri-border bg-white px-4 py-2 text-center text-sm font-bold text-obri-ink">
-        24/7 Service - 45 Minute Call-Out - Call <a className="text-obri-blue hover:text-teal-700" href={`tel:${company.tel}`}>{company.phone}</a>
-      </div>
       <div className="border-b border-white/10 bg-obri-navy/95 px-4 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 py-4">
           <Logo />

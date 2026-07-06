@@ -20,7 +20,7 @@ export const company = {
   tradingName: "OBRI Electrical Services",
   phone: "0203 633 0733",
   tel: "02036330733",
-  whatsapp: "442036330733",
+  whatsapp: "447445512699",
   address: "Tonbridge House, Tonbridge Street, London WC1H 9PA",
   email: "info@obri.co.uk",
   siteUrl: "https://www.obri.co.uk",
