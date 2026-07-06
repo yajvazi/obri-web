@@ -27,6 +27,7 @@ export function Footer() {
           <h3 className="font-bold">Contact</h3>
           <p className="mt-4 text-sm text-blue-100">{company.address}</p>
           <a className="mt-3 block text-xl font-black text-white" href={`tel:${company.tel}`}>{company.phone}</a>
+          <a className="mt-2 block text-sm font-bold text-blue-100 hover:text-white" href={`mailto:${company.email}`}>{company.email}</a>
           <a className="mt-3 inline-block rounded bg-obri-emergency px-4 py-3 font-bold" href="/contact">Emergency call-out</a>
         </div>
       </div>

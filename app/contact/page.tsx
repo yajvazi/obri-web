@@ -20,6 +20,9 @@ export default function ContactPage() {
           <p className="mt-2 max-w-3xl text-blue-100">{sourceContent.contact[1]}</p>
           <p className="mt-5 max-w-3xl text-xl font-bold text-white">{company.address}</p>
           <p className="mt-2 text-2xl font-black">{company.phone}</p>
+          <a className="mt-2 inline-block text-lg font-bold text-blue-100 hover:text-white" href={`mailto:${company.email}`}>
+            {company.email}
+          </a>
           <div className="mt-8"><CTAButtons /></div>
         </div>
       </section>
@@ -30,6 +33,9 @@ export default function ContactPage() {
             <div className="p-6">
               <h2 className="text-2xl font-black">{sourceContent.contact[2]}</h2>
               <p className="mt-3 text-slate-700">{company.address}</p>
+              <a className="mt-3 block font-bold text-obri-blue hover:text-teal-700" href={`mailto:${company.email}`}>
+                {company.email}
+              </a>
               <p className="mt-3 font-bold">{sourceContent.contact[3]}</p>
               <p className="font-bold">{sourceContent.contact[4]}</p>
             </div>
