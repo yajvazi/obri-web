@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 180" role="img" aria-labelledby="title desc">
   <title id="title">OBRI Electrical Services logo</title>
   <desc id="desc">OBRI Electrical Services logo inspired by the public Obri website branding.</desc>
-  <rect width="620" height="180" rx="18" fill="#061728"/>
   <circle cx="92" cy="76" r="48" fill="#f4f8ff"/>
-  <circle cx="92" cy="76" r="36" fill="#061728"/>
+  <circle cx="92" cy="76" r="36" fill="#111827"/>
   <path d="M103 24 70 84h28l-15 44 43-65H99l4-39Z" fill="#f4f8ff"/>
   <text x="158" y="92" fill="#0aa4dd" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900" letter-spacing="2">OBRI</text>
   <text x="162" y="136" fill="#f4f8ff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="8">ELECTRICAL SERVICES</text>
